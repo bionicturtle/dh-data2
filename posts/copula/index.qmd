@@ -1,0 +1,20 @@
+---
+title: "David's Copula qmd"
+author: "David Harper"
+date: "2023-08-10"
+categories: [news, code, analysis]
+image: "image.png"
+---
+
+Copula
+
+```{r}
+
+library(copula)
+d <- 2
+vect_my <- 1
+gc <- normalCopula(param = vect_my, dim = 2, dispstr = "un")
+u <- c(1/3, .5)
+pCopula(u, copula = gc)
+
+```

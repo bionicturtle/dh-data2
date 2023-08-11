@@ -1,0 +1,14 @@
+{
+  "hash": "14b9288f94d4eddca537213181e3e259",
+  "result": {
+    "markdown": "---\ntitle: \"David's Copula qmd\"\nauthor: \"David Harper\"\ndate: \"2023-08-10\"\ncategories: [news, code, analysis]\nimage: \"image.png\"\n---\n\n\nCopula\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(copula)\nd <- 2\nvect_my <- 1\ngc <- normalCopula(param = vect_my, dim = 2, dispstr = \"un\")\nu <- c(1/3, .5)\npCopula(u, copula = gc)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 0.3333333\n```\n:::\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
